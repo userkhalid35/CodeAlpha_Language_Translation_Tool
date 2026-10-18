@@ -1,93 +1,12 @@
 {
-    "theme": "dark",
-    "window_width": 1920,
-    "window_height": 1009,
-    "window_x": 0,
-    "window_y": -8,
+    "theme": "light",
+    "window_width": 1024,
+    "window_height": 768,
+    "window_x": 100,
+    "window_y": 100,
     "source_language": "auto",
-    "target_language": "en",
-    "history": [
-        {
-            "id": 1,
-            "timestamp": "2026-07-03T17:57:58Z",
-            "source_lang": "auto",
-            "target_lang": "hi",
-            "source_text": "Hey",
-            "target_text": "अरे",
-            "is_favorite": false
-        },
-        {
-            "id": 2,
-            "timestamp": "2026-07-03T17:58:12Z",
-            "source_lang": "auto",
-            "target_lang": "hi",
-            "source_text": "Hey I am A Gon Killua",
-            "target_text": "अरे मैं एक गॉन किलुआ हूं",
-            "is_favorite": false
-        },
-        {
-            "id": 3,
-            "timestamp": "2026-07-03T17:58:22Z",
-            "source_lang": "iw",
-            "target_lang": "af",
-            "source_text": "अरे मैं एक गॉन किलुआ हूं",
-            "target_text": "Hey मैन अक गॉन किलुए हून",
-            "is_favorite": false
-        },
-        {
-            "id": 4,
-            "timestamp": "2026-07-03T17:58:31Z",
-            "source_lang": "iw",
-            "target_lang": "en",
-            "source_text": "अरे मैं एक गॉन किलुआ हूं",
-            "target_text": "Hey मैन अक गॉन किलुए हून",
-            "is_favorite": false
-        },
-        {
-            "id": 5,
-            "timestamp": "2026-07-03T17:58:36Z",
-            "source_lang": "iw",
-            "target_lang": "en",
-            "source_text": "अरे मैं एक गॉन किलुआ हूं",
-            "target_text": "Hey मैन अक गॉन किलुए हून",
-            "is_favorite": false
-        },
-        {
-            "id": 6,
-            "timestamp": "2026-07-03T17:59:13Z",
-            "source_lang": "auto",
-            "target_lang": "en",
-            "source_text": "हे, मेरा नाम गॉन किल्हुआ है।",
-            "target_text": "Hey, my name is Gon Killua.",
-            "is_favorite": false
-        },
-        {
-            "id": 7,
-            "timestamp": "2026-07-03T18:01:06Z",
-            "source_lang": "auto",
-            "target_lang": "en",
-            "source_text": "कोशिश करने वालों की हार नहीं होतीलहरों से डरकर नौका पार नहीं होती,कोशिश करने वालों की हार नहीं होती।नन्हीं चींटी जब दाना लेकर चलती है,चढ़ती दीवारों पर, सौ बार फिसलती है।मन का विश्वास रगों में साहस भरता है,चढ़कर गिरना, गिरकर चढ़ना न अखरता है।आखिर उसकी मेहनत बेकार नहीं होती,कोशिश करने वालों की हार नहीं होती।डुबकियां सिंधु में गोताखोर लगाता है,जा जा कर खाली हाथ लौटकर आता है।मिलते नहीं सहज ही मोती गहरे पानी में,बढ़ता दुगना उत्साह इसी हैरानी में।मुट्ठी उसकी खाली हर बार नहीं होती,कोशिश करने वालों की हार नहीं होती।असफलता एक चुनौती है, इसे स्वीकार करो,क्या कमी रह गई, देखो और सुधार करो।जब तक न सफल हो, नींद चैन को त्यागो तुम,संघर्ष का मैदान छोड़ कर मत भागो तुम।कुछ किए बिना ही जय जय कार नहीं होती,कोशिश करने वालों की हार नहीं होती।",
-            "target_text": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-            "is_favorite": false
-        },
-        {
-            "id": 8,
-            "timestamp": "2026-07-03T18:01:19Z",
-            "source_lang": "auto",
-            "target_lang": "en",
-            "source_text": "कोशिश करने वालों की हार नहीं होतीलहरों से डरकर नौका पार नहीं होती,कोशिश करने वालों की हार नहीं होती।नन्हीं चींटी जब दाना लेकर चलती है,चढ़ती दीवारों पर, सौ बार फिसलती है।मन का विश्वास रगों में साहस भरता है,चढ़कर गिरना, गिरकर चढ़ना न अखरता है।आखिर उसकी मेहनत बेकार नहीं होती,कोशिश करने वालों की हार नहीं होती।डुबकियां सिंधु में गोताखोर लगाता है,जा जा कर खाली हाथ लौटकर आता है।मिलते नहीं सहज ही मोती गहरे पानी में,बढ़ता दुगना उत्साह इसी हैरानी में।मुट्ठी उसकी खाली हर बार नहीं होती,कोशिश करने वालों की हार नहीं होती।असफलता एक चुनौती है, इसे स्वीकार करो,क्या कमी रह गई, देखो और सुधार करो।जब तक न सफल हो, नींद चैन को त्यागो तुम,संघर्ष का मैदान छोड़ कर मत भागो तुम।कुछ किए बिना ही जय जय कार नहीं होती,कोशिश करने वालों की हार नहीं होती।",
-            "target_text": "Those who try will not be defeated. The boat does not cross due to fear of the oceans, those who try are not defeated. When a small ant walks with a grain, climbs the walls, slips a hundred times. The faith of the mind fills the veins of the heart with courage, climbing up and falling does not hurt, neither does climbing after falling. After all, his hard work does not go in vain, those who try do not lose. A diver takes a dip in the Indus, but goes empty handed. It comes back. Pearls are not easily found in deep water, double the enthusiasm increases in this surprise. His fist is not empty every time, those who try do not lose. Failure is a challenge, accept it, see what is missing, see and improve. Unless you succeed, do not give up sleep and peace, do not run away from the field of struggle. There is no victory without doing anything, there is no victory for those who try.",
-            "is_favorite": false
-        },
-        {
-            "id": 9,
-            "timestamp": "2026-07-03T18:02:15Z",
-            "source_lang": "auto",
-            "target_lang": "en",
-            "source_text": "कोशिश करने वालों की हार नहीं होतीलहरों से डरकर नौका पार नहीं होती,कोशिश करने वालों की हार नहीं होती।नन्हीं चींटी जब दाना लेकर चलती है,चढ़ती दीवारों पर, सौ बार फिसलती है।मन का विश्वास रगों में साहस भरता है,चढ़कर गिरना, गिरकर चढ़ना न अखरता है।आखिर उसकी मेहनत बेकार नहीं होती,कोशिश करने वालों की हार नहीं होती।डुबकियां सिंधु में गोताखोर लगाता है,जा जा कर खाली हाथ लौटकर आता है।मिलते नहीं सहज ही मोती गहरे पानी में,बढ़ता दुगना उत्साह इसी हैरानी में।मुट्ठी उसकी खाली हर बार नहीं होती,कोशिश करने वालों की हार नहीं होती।असफलता एक चुनौती है, इसे स्वीकार करो,क्या कमी रह गई, देखो और सुधार करो।जब तक न सफल हो, नींद चैन को त्यागो तुम,संघर्ष का मैदान छोड़ कर मत भागो तुम।कुछ किए बिना ही जय जय कार नहीं होती,कोशिश करने वालों की हार नहीं होती।",
-            "target_text": "Those who try will not be defeated. The boat does not cross due to fear of the oceans, those who try are not defeated. When a small ant walks with a grain, climbs the walls, slips a hundred times. The faith of the mind fills the veins of the heart with courage, climbing up and falling does not hurt, neither does climbing after falling. After all, his hard work does not go in vain, those who try do not lose. A diver takes a dip in the Indus, but goes empty handed. It comes back. Pearls are not easily found in deep water, double the enthusiasm increases in this surprise. His fist is not empty every time, those who try do not lose. Failure is a challenge, accept it, see what is missing, see and improve. Unless you succeed, do not give up sleep and peace, do not run away from the field of struggle. There is no victory without doing anything, there is no victory for those who try.",
-            "is_favorite": false
-        }
-    ],
+    "target_language": "es",
+    "max_characters": 50000,
+    "history": [],
     "favorites": []
 }

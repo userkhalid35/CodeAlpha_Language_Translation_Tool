@@ -1,32 +1,45 @@
 """
-Application entry point.
+Application entry point for CodeAlpha Translation Tool.
 
-Bootstrap the application, set up logging, and launch the main window.
+Bootstrap the application, configure logging, initialize the MVC architecture,
+and launch the PySide6 main window.
 """
 
 import sys
 import logging
 from pathlib import Path
 
-from PySide6.QtWidgets import QApplication
-from PySide6.QtCore import Qt
+# Minimum supported Python version check
+if sys.version_info < (3, 10):
+    sys.stderr.write(
+        f"Error: Python {sys.version_info.major}.{sys.version_info.minor} is not supported. "
+        "CodeAlpha Translator requires Python 3.10 to 3.15.\n"
+    )
+    sys.exit(1)
 
+# Ensure project root is in sys.path for robust imports from any cwd
+ROOT_DIR = Path(__file__).resolve().parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+# pyrefly: ignore[missing-import]
+from PySide6.QtWidgets import QApplication
 from ui.main_window import MainWindow
 from controllers.main_controller import MainController
 
 
 def setup_logging() -> None:
-    """Configure logging for the application."""
+    """Configure application logging with safe Unicode handling."""
     log_file = Path("translation_app.log")
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
         handlers=[
-            logging.FileHandler(log_file, encoding="utf-8"),
-            logging.StreamHandler(sys.stdout)
-        ]
+            logging.FileHandler(log_file, encoding="utf-8", mode="a"),
+            logging.StreamHandler(sys.stdout),
+        ],
     )
-    # Reduce noisy logs from deep_translator/urllib3
+    # Suppress verbose HTTP logs
     logging.getLogger("deep_translator").setLevel(logging.WARNING)
     logging.getLogger("urllib3").setLevel(logging.WARNING)
 
@@ -34,24 +47,26 @@ def setup_logging() -> None:
 def main() -> None:
     """Application entry point."""
     setup_logging()
-    logger = logging.getLogger(__name__)
-    logger.info("Starting CodeAlpha Translator")
+    logger = logging.getLogger("CodeAlphaTranslator")
+    logger.info("Starting CodeAlpha Translation Tool")
 
     app = QApplication(sys.argv)
     app.setApplicationName("CodeAlpha Translator")
     app.setOrganizationName("CodeAlpha")
-    app.setStyle("Fusion")  # Cross-platform consistent style
+    app.setStyle("Fusion")  # Modern cross-platform style
 
-    # Create main window
+    # Initialize MVC components
     window = MainWindow()
-    # Create controller
     controller = MainController(window)
 
-    # Connect controller save on window close
-    def on_close():
-        controller.save_state()
-        logger.info("Application closed")
-    window.destroyed.connect(on_close)
+    # Ensure application state is saved cleanly on exit
+    app.aboutToQuit.connect(controller.save_state)
+
+    # Allow automated smoke test / verification without hanging GUI event loop
+    if "--test-init" in sys.argv:
+        logger.info("Application initialized successfully in test mode.")
+        print("Application initialized successfully in test mode.")
+        return
 
     window.show()
     sys.exit(app.exec())
