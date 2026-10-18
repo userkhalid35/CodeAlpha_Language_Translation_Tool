@@ -104,20 +104,13 @@ class MainController(QObject):
 
         source_clean = source_text.strip()
         if not source_clean:
+            self.window.set_translating(False)
             self.window.show_error_message("Source text is empty.")
             return
 
-        # 2. Maximum character validation (50,000 limit)
-        max_limit = self.app_state.max_characters if self.app_state else 50000
-        if len(source_clean) > max_limit:
-            self.window.show_error_message(
-                f"Source text exceeds the maximum limit of {max_limit:,} characters "
-                f"(current: {len(source_clean):,} characters)."
-            )
-            return
-
-        # 3. Language pair validation
+        # 2. Language pair validation
         if source_lang == target_lang and source_lang != "auto":
+            self.window.set_translating(False)
             self.window.show_error_message("Source and target languages cannot be identical.")
             return
 
@@ -155,6 +148,7 @@ class MainController(QObject):
     def _on_thread_finished(self) -> None:
         """Handle worker thread cleanup when thread completes execution."""
         self.is_translating = False
+        self.window.set_translating(False)
         self.thread = None
         self.worker = None
 

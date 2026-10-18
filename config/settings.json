@@ -1,5 +1,5 @@
 {
-    "theme": "light",
+    "theme": "dark",
     "window_width": 1024,
     "window_height": 768,
     "window_x": 100,
@@ -7,6 +7,70 @@
     "source_language": "auto",
     "target_language": "es",
     "max_characters": 50000,
-    "history": [],
+    "history": [
+        {
+            "id": 1,
+            "timestamp": "2026-10-18T12:36:42Z",
+            "source_lang": "auto",
+            "target_lang": "es",
+            "source_text": "hello",
+            "target_text": "Hola",
+            "is_favorite": false
+        },
+        {
+            "id": 2,
+            "timestamp": "2026-10-18T12:36:50Z",
+            "source_lang": "auto",
+            "target_lang": "es",
+            "source_text": "wow",
+            "target_text": "Guau",
+            "is_favorite": false
+        },
+        {
+            "id": 3,
+            "timestamp": "2026-10-18T12:37:01Z",
+            "source_lang": "auto",
+            "target_lang": "es",
+            "source_text": "brp",
+            "target_text": "brp",
+            "is_favorite": false
+        },
+        {
+            "id": 4,
+            "timestamp": "2026-10-18T12:37:13Z",
+            "source_lang": "auto",
+            "target_lang": "es",
+            "source_text": "my name is kaif haal",
+            "target_text": "mi nombre es kaif haal",
+            "is_favorite": false
+        },
+        {
+            "id": 5,
+            "timestamp": "2026-10-18T12:56:33Z",
+            "source_lang": "auto",
+            "target_lang": "es",
+            "source_text": "Hello",
+            "target_text": "Hola",
+            "is_favorite": false
+        },
+        {
+            "id": 6,
+            "timestamp": "2026-10-18T12:56:39Z",
+            "source_lang": "auto",
+            "target_lang": "es",
+            "source_text": "wow incredible",
+            "target_text": "guau increible",
+            "is_favorite": false
+        },
+        {
+            "id": 7,
+            "timestamp": "2026-10-18T12:56:47Z",
+            "source_lang": "auto",
+            "target_lang": "es",
+            "source_text": "How are you?",
+            "target_text": "¿Cómo estás?",
+            "is_favorite": false
+        }
+    ],
     "favorites": []
 }

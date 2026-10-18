@@ -5,12 +5,12 @@ Bootstrap the application, configure logging, initialize the MVC architecture,
 and launch the PySide6 main window.
 """
 
-import sys
 import logging
 from pathlib import Path
+import sys
 
 # Minimum supported Python version check
-if sys.version_info < (3, 10):
+if sys.version_info < (3, 10):  # noqa: UP036
     sys.stderr.write(
         f"Error: Python {sys.version_info.major}.{sys.version_info.minor} is not supported. "
         "CodeAlpha Translator requires Python 3.10 to 3.15.\n"
@@ -24,8 +24,9 @@ if str(ROOT_DIR) not in sys.path:
 
 # pyrefly: ignore[missing-import]
 from PySide6.QtWidgets import QApplication
-from ui.main_window import MainWindow
+
 from controllers.main_controller import MainController
+from ui.main_window import MainWindow
 
 
 def setup_logging() -> None:

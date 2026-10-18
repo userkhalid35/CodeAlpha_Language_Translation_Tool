@@ -303,18 +303,15 @@ class MainWindow(QMainWindow):
         toolbar.addWidget(theme_btn)
 
     def _setup_shortcuts(self) -> None:
-        """Setup application-wide keyboard shortcuts."""
-        # Translate: Ctrl+Enter
-        translate_action = QAction(self)
-        translate_action.setShortcut(QKeySequence("Ctrl+Return"))
-        translate_action.triggered.connect(self._on_translate_clicked)
-        self.addAction(translate_action)
-
-        # Also support keypad Enter: Ctrl+Enter
-        translate_kp_action = QAction(self)
-        translate_kp_action.setShortcut(QKeySequence("Ctrl+Enter"))
-        translate_kp_action.triggered.connect(self._on_translate_clicked)
-        self.addAction(translate_kp_action)
+        """Setup persistent application-wide keyboard shortcuts."""
+        self.translate_shortcut_action = QAction(self)
+        self.translate_shortcut_action.setShortcuts([
+            QKeySequence("Ctrl+Return"),
+            QKeySequence("Ctrl+Enter"),
+        ])
+        self.translate_shortcut_action.setShortcutContext(Qt.ShortcutContext.ApplicationShortcut)
+        self.translate_shortcut_action.triggered.connect(self._on_translate_clicked)
+        self.addAction(self.translate_shortcut_action)
 
     def _populate_language_dropdowns(self) -> None:
         """Fill language comboboxes with supported languages."""
